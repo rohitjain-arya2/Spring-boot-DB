@@ -13,7 +13,7 @@ public class PostgressApplication {
 	@Value("${databasepassword}")
 	private String databasepassword;
 
-	@GetMapping("/message")
+	@GetMapping("/keyvalult")
 	public String message(){
 		return "Test message>>>>"+databasepassword;
 	}
